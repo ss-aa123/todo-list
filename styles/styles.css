@@ -1,0 +1,109 @@
+*{
+    font-family: 'Poppins', sans-serif; /*changing the font of whole page*/
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  /* good website for box shadows: https://getcssscan.com/css-box-shadow-examples */
+  
+  .header {
+    background: #02124f;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .todo-title {
+    font-size: 33px;
+  }
+  
+
+  /* style for input */
+  input {
+    margin-right: 3em;
+    border: none;
+    border-radius: 15px;
+    width: 75%;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .add-tasks {
+    display:flex;
+  }
+  
+
+  /* style for add button */
+  .add-button {
+    padding: 10px;
+    width: 25%;
+    background: white;
+    color: #555;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+  .add-button:hover {
+    background-color: #f05dc1;
+    color: #fff;
+  } 
+
+
+/*list items styling*/
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    padding: 12px 8px 12px 40px;
+    background: #fcfcfc;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.2s;
+  }
+  ul li:hover {
+    background: #ddd;
+  }
+/* ^^^^^^^ */
+
+
+/* "checked" is a class of the list items only when clicked */
+ul li.checked {
+    background: #f05dc1;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  /* checkmark for checked list items */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  .delete:hover {
+    background-color: #f05dc1;
+    color: white;
+  }
+
+
